@@ -4,7 +4,7 @@
 
 Each list below is someone else's work, kept as its own file under `sources/<name>/` and never merged with another list. It keeps its own licence and its authors' credit. A snapshot is the file as fetched, with LF line endings; the Changes line says where CPAB changed more than that.
 
-CPAB's own files, `cpab-own.txt` and `cpab-exceptions.txt`, are under GPL-3.0-or-later (`LICENSE`).
+CPAB's own files, `cpab-own.txt`, `cpab-exceptions.txt` and `cpab-leaks.txt`, are under GPL-3.0-or-later (`LICENSE`).
 
 ## EasyList
 
@@ -159,4 +159,18 @@ CPAB's own files, `cpab-own.txt` and `cpab-exceptions.txt`, are under GPL-3.0-or
 - **Licence text:** `sources/hagezi-nsfw/LICENSE.txt`
 - **Snapshot:** 2026-11-07, version 2026.1107.1617.39, commit 3cba4065c1273abd841c7f8ff42b882c620382cb
 - **SHA-256:** `0f53d9524b640f92ae03185600270ca4ffda7545002f52aa070290b0d6010140`
+- **Changes:** unmodified snapshot
+
+## Leakfa breached Iranian sites
+
+- **Title:** Leakfa breached Iranian sites
+- **Attribution:** Leakfa (https://leakfa.com/)
+- **Homepage:** https://leakfa.com/
+- **Source:** https://raw.githubusercontent.com/Leakfarsi/Leakfa-Alert/domains/leaks.json
+- **Licence:** MIT, SPDX `MIT`, https://github.com/Leakfarsi/Leakfa-Alert/blob/domains/LICENSE
+- **Licence of the list:** LICENSE on the domains branch of Leakfarsi/Leakfa-Alert, the branch whose only content is leaks.json: the MIT text, "Copyright (c) 2026 Leakfa", since the branch's first commit cfff97a (2026-07-02). The main branch carries the same LICENSE and both READMEs say the project is released under MIT. Read on 2026-11-08.
+- **Folder:** `sources/leakfa-breaches/`, with the snapshot `sources/leakfa-breaches/leakfa-breaches.json` and its record `sources/leakfa-breaches/meta.json`
+- **Licence text:** `sources/leakfa-breaches/LICENSE.txt`
+- **Snapshot:** 2026-11-08, commit e38bd2af25912896d658caba6a26c0642b7a9cba
+- **SHA-256:** `167ec63a40db51a7f81a4318d4e69f25b5005f88b789ff4c120747b29c7572a4`
 - **Changes:** unmodified snapshot
