@@ -73,8 +73,8 @@ CPAB's own files, `cpab-own.txt` and `cpab-exceptions.txt`, are under GPL-3.0-or
 - **Licence of the list:** The repository LICENSE is the GPLv3 text and the list header points to it, with no "or later", so CPAB treats the list as GPL-3.0-only. The same text ships as LICENSE at the top of the package.
 - **Folder:** `sources/hagezi-light/`, with the snapshot `sources/hagezi-light/hagezi-light.txt` and its record `sources/hagezi-light/meta.json`
 - **Licence text:** `sources/hagezi-light/LICENSE.txt`
-- **Snapshot:** 2026-11-07, version 2026.1107.0909.37, commit 22c1f1b0774e88f94621f1eb01526350de1f7e53
-- **SHA-256:** `f46694d2549964fe72b6650d98d2a3724d3627bc9438a0b02e7ae48b2c6d4cfd`
+- **Snapshot:** 2026-11-08, version 2026.1108.0907.29, commit 5c992c35301e6f3e4c84181b1dfd51873ca35a21
+- **SHA-256:** `76a41f8e59f78557276786d87856a21c7c69d588817ce825682eda31921f4cf6`
 - **Changes:** unmodified snapshot
 
 ## AdGuard Popups filter
