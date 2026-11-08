@@ -1,0 +1,33 @@
+! Title: CPAB own rules
+! Homepage: https://cyclone9.dev/cpab
+! License: GPL-3.0-or-later
+!
+! CPAB's own rules, from the owner's reports and our own research. Write every rule here by hand,
+! never copied from another list, with a comment above it saying where it came from and when:
+! ! 2026-11-04, owner report, example.ir
+!
+! :cpab-offscreen is CPAB's own mark: it moves the box out of view at full size. Other blockers
+! do not understand it.
+!
+! 2026-11-06, owner report, kojaro.com: the top banner. PersianBlocker's kojaro rules no longer match
+! it, and its images carry no ad address. The close button is what marks this box as an ad.
+kojaro.com##div:has(> div > button[aria-label="بستن تبلیغ"])
+!
+! 2026-11-06, owner report, soft98.ir: banners served from the site's own hosts, which no list blocks.
+! The 300x250 image sits in a hidden link and may be how the site checks for a blocker. EasyList
+! blocks it by its name, so it stays loading whichever lists are on.
+@@||img.soft98.ir/1/300x250.$image,domain=soft98.ir
+@@||file3.soft98.ir/300x250.$image,domain=soft98.ir
+! 2026-11-07, owner report, soft98.ir: with the banner images blocked and the boxes collapsed, the
+! site showed its blocker warning. The images now load and the boxes move out of view at full size.
+! The page's script forces display and clip-path back, inline with !important and on a timer, so
+! nothing here touches those. Only the outermost box of each ad moves: one moved inside another
+! would leave the outer one zero wide. #sbd, #tbdl and .tbdl hold the real software list and stay.
+soft98.ir##.cbd1211:has(> .abdd):cpab-offscreen
+soft98.ir##.abdd_ibd:cpab-offscreen
+soft98.ir###sbds:has(.abddl):cpab-offscreen
+soft98.ir###sbd > .cbdd:has(> .abdd):cpab-offscreen
+soft98.ir##.abddm:not(.abdd_ibd > .abddm):cpab-offscreen
+soft98.ir##.abdd:not(.cbd1211 > .abdd, .abddm > .abdd, #sbd > .cbdd > .abdd):cpab-offscreen
+soft98.ir###sbd > hr:has(+ #sbds)
+soft98.ir###sbd > hr:has(+ .cbdd > .abdd)
